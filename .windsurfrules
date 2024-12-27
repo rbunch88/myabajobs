@@ -1,0 +1,185 @@
+# Job Board Project
+
+Every time you choose to apply a rule(s), explicitly state the rule(s) in the output. You can abbreviate the rule description to a single word or phrase.
+
+## Project Context
+
+Job board application with Google Jobs integration requirements
+
+- Next.js application deployed on Vercel
+- Implements structured data for job postings
+- Uses Supabase for database and authentication
+- Implements Stripe and PayPal payment processing
+- Features monitoring and validation systems
+
+## Code Style and Structure
+
+- Write concise, technical TypeScript code with accurate examples
+- Use functional and declarative programming patterns; avoid classes
+- Prefer iteration and modularization over code duplication
+- Use descriptive variable names with auxiliary verbs (e.g., isJobExpired, hasValidSession)
+- Structure repository files as follows:
+
+```
+src/
+├── app/              # Next.js App Router pages
+│   ├── (auth)/      # Authentication-related routes
+│   ├── api/         # API routes
+│   ├── jobs/        # Job listing and posting routes
+│   └── payments/    # Payment processing routes
+├── components/      # React components
+│   ├── ui/         # shadcn components
+│   ├── jobs/       # Job-related components
+│   ├── auth/       # Authentication components
+│   └── payments/   # Payment components
+├── hooks/          # Custom React hooks
+├── lib/            # Shared libraries and configurations
+│   ├── supabase/   # Supabase client and helpers
+│   ├── stripe/     # Stripe integration
+│   ├── paypal/     # PayPal integration
+│   └── google/     # Google Jobs integration
+├── types/          # TypeScript type definitions
+├── utils/          # Helper functions
+└── styles/         # Global styles and Tailwind
+supabase/           # Supabase configurations
+├── migrations/     # Database migrations
+└── types/          # Generated Supabase types
+```
+
+## Tech Stack
+
+- Next.js 14+ with App Router
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn
+- Supabase
+- Stripe
+- PayPal
+- Vercel
+- Zod for validation
+
+## Naming Conventions
+
+- Use kebab-case for routes (e.g., /job-postings)
+- Use page.tsx for Next.js route files
+- Use layout.tsx for Next.js layouts
+- Favor named exports for components and utilities
+- Use PascalCase for component files (e.g., JobPostingForm.tsx)
+- Use camelCase for utility files (e.g., supabaseClient.ts)
+- Prefix API routes with HTTP method (e.g., GET.ts, POST.ts)
+
+## TypeScript Usage
+
+- Use TypeScript for all code; prefer interfaces over types
+- Define job-related types using interfaces matching Google Jobs schema
+- Use discriminated unions for job status and payment states
+- Use Supabase-generated types for database entities
+- Use absolute imports with @/...
+- Define route parameters using Next.js types
+- Define explicit return types for all functions
+
+## State Management
+
+- Use React Context for global job filtering and auth state
+- Use Next.js Server Components where possible
+- Implement proper state persistence using Supabase real-time subscriptions
+- Use React Query (Tanstack Query) for client-side data fetching
+- Implement proper cleanup in useEffect hooks
+- Use URL parameters for search and filter state
+
+## Syntax and Formatting
+
+- Use Server Components by default
+- Mark components as 'use client' only when needed
+- Use proper TypeScript typing for Supabase queries
+- Use Next.js API route handlers
+- Follow Next.js metadata standards
+- Use proper error boundary placement
+
+## UI and Styling
+
+- Use shadcn components
+- Use `npx shadcn add <component-name>` for new components
+- Implement Tailwind CSS for styling
+- Ensure proper responsive design
+- Follow accessibility guidelines
+- Use Next.js Image component for images
+- Implement proper loading states
+
+## Error Handling
+
+- Implement proper error boundaries
+- Use Next.js error.tsx pages
+- Handle payment processing errors gracefully
+- Provide user-friendly error messages
+- Implement proper Supabase error handling
+- Use Next.js error handling patterns
+
+## Testing
+
+- Write unit tests for utilities
+- Test Server Components
+- Test payment processing
+- Monitor performance metrics using Vercel Analytics
+- Test Supabase queries and real-time subscriptions
+
+## Security
+
+- Implement proper Supabase RLS policies
+- Secure payment processing endpoints
+- Use Next.js middleware for auth protection
+- Handle sensitive payment data properly
+- Implement rate limiting using Vercel Edge Config
+- Follow Stripe and PayPal security best practices
+
+## Deployment
+
+- Use Vercel for deployment
+- Configure proper environment variables in Vercel
+- Use Vercel CLI for local development
+- Implement proper preview deployments
+- Configure domain settings in Vercel
+- Use Vercel Edge Functions where appropriate
+
+## Git Usage
+
+Commit Message Prefixes:
+
+- "fix:" for bug fixes
+- "feat:" for new features
+- "perf:" for performance improvements
+- "docs:" for documentation changes
+- "style:" for formatting changes
+- "refactor:" for code refactoring
+- "test:" for adding missing tests
+- "chore:" for maintenance tasks
+
+Rules:
+
+- Use lowercase for commit messages
+- Keep the summary line concise
+- Include description for schema changes
+- Reference issue numbers when applicable
+- Tag payment-related changes appropriately
+
+## Documentation
+
+- Maintain clear README with setup instructions
+- Document Supabase schema and RLS policies
+- Document payment processing flows
+- Document authentication flows
+- Document API routes
+- Document deployment process
+- Keep environment variables documented
+
+## Development Workflow
+
+- Use Vercel CLI for local development
+- Test preview deployments before production
+- Implement proper code review process
+- Use Supabase CLI for database changes
+- Follow semantic versioning
+- Maintain changelog
+- Test payment integrations in test mode
+- Use proper staging environments

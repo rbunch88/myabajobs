@@ -4,7 +4,7 @@
 
 ### Day 1: Infrastructure Setup
 
-- Set up Next.js project with TypeScript
+- Set up Next.js project with TypeScript using Vercel CLI
 - Configure Tailwind CSS
 - Set up Supabase project
 - Configure authentication

@@ -1,0 +1,209 @@
+# Vercel SDK
+
+Title: Vercel SDK
+
+URL Source: https://vercel.com/docs/rest-api/sdk
+
+Markdown Content:
+Vercel SDK
+===============
+
+[![Image 3: vercel-logotype Logo](https://vercel.com/vc-ap-vercel-docs/_next/static/media/vercel-logotype-light.700a8d26.svg)![Image 4: vercel-logotype Logo](https://vercel.com/vc-ap-vercel-docs/_next/static/media/vercel-logotype-dark.e8c0a742.svg)](https://vercel.com/)
+
+*   [Documentation](https://vercel.com/docs)
+*   [Guides](https://vercel.com/guides)
+*   [Help](https://vercel.com/help)
+
+Search...
+
+⌘ K
+
+Feedback
+
+*   Platform
+    
+    *   [Get Started Build for the web and learn to use our platform](https://vercel.com/docs/getting-started-with-vercel)[Incremental Migration Migrate your site to Vercel with minimum risk](https://vercel.com/docs/incremental-migration)[Frameworks Deploy with the framework of your choice on our platform](https://vercel.com/docs/frameworks)[Projects A Project groups deployments and custom domains](https://vercel.com/docs/projects/overview)[Builds Learn how your projects are built and configured](https://vercel.com/docs/deployments/builds)[Deployments How your sites are generated and configured](https://vercel.com/docs/deployments/overview)[Domains Adding, deploying, redirecting and transferring domains](https://vercel.com/docs/projects/domains)[Going Live Checklist Pre-launch checklist for your project](https://vercel.com/docs/production-checklist)[Pricing Pricing, plans, and spend management](https://vercel.com/docs/pricing)[Resources Learn about account management, error handling, and more](https://vercel.com/docs/resources)
+    
+*   Infrastructure
+    
+    *   [Edge Network Configurable CDN with caching, compute, and routing rules](https://vercel.com/docs/edge-network/overview)[Vercel Functions Code on-demand without managing your own infrastructure](https://vercel.com/docs/functions)[Edge Middleware Code that executes before a request is processed on a site](https://vercel.com/docs/functions/edge-middleware)[Image Optimization Serve high-quality images with minimal impact on page load times](https://vercel.com/docs/image-optimization)[Incremental Static Regeneration Create or update content without redeploying your site](https://vercel.com/docs/incremental-static-regeneration)[Data Cache Specialized cache for storing responses from fetches](https://vercel.com/docs/infrastructure/data-cache)[Cron Jobs Time-based scheduling to automate repetitive tasks](https://vercel.com/docs/cron-jobs)
+    
+*   Workflow
+    
+    *   [Vercel Toolbar Manage your Vercel projects from your browser](https://vercel.com/docs/workflow-collaboration/vercel-toolbar)[Feature Flags View and override your application's feature flags](https://vercel.com/docs/workflow-collaboration/feature-flags)[Comments Allow collaborators to give direct feedback on preview deployments](https://vercel.com/docs/workflow-collaboration/comments)[Edit Mode Edit your content directly on your site](https://vercel.com/docs/workflow-collaboration/edit-mode)[Draft Mode Preview changes before publishing](https://vercel.com/docs/workflow-collaboration/draft-mode)[Conformance Improve collaboration, productivity, and software quality at scale](https://vercel.com/docs/workflow-collaboration/conformance)[Code Owners Define users or teams that are responsible for your codebase](https://vercel.com/docs/workflow-collaboration/code-owners)
+    
+*   Storage
+    
+    *   [Storage on Vercel Learn about Vercel’s storage solutions](https://vercel.com/docs/storage)[Vercel KV Durable Redis database to store and retrieve JSON data](https://vercel.com/docs/storage/vercel-kv)[Vercel Postgres Serverless SQL database integrated with Vercel Functions](https://vercel.com/docs/storage/vercel-postgres)[Vercel Blob File serving and uploading via a global network with unique URLs](https://vercel.com/docs/storage/vercel-blob)[Edge Config Global data store designed for experimentation](https://vercel.com/docs/storage/edge-config)
+    
+*   Observability
+    
+    *   [Observability Monitor and analyze your frontend performance](https://vercel.com/docs/observability)[Web Analytics First-party, privacy-friendly analytics about website visitors](https://vercel.com/docs/analytics)[Speed Insights Explore and improve your website performance](https://vercel.com/docs/speed-insights)[Logs Search, inspect, and share your runtime logs](https://vercel.com/docs/observability/logs)[OpenTelemetry Collector Send OTEL traces from Functions to APM vendors](https://vercel.com/docs/observability/otel-overview)[Checks Checks API assesses your deployments quality and reliability](https://vercel.com/docs/observability/checks-overview)
+    
+*   Integrations
+    
+    *   [Integration Overview Learn how to extend Vercel's capabilities by integrating with your preferred providers](https://vercel.com/docs/integrations)[Extend Vercel Install an integration to extend Vercel](https://vercel.com/docs/integrations/install-an-integration)[Integrate with Vercel Create an integration to integrate with Vercel](https://vercel.com/docs/integrations/create-integration)[AI Extend your projects with AI services and models](https://vercel.com/docs/integrations/ai)[CMS Integrate with Content Management Systems](https://vercel.com/docs/integrations/cms)[Ecommerce Integrate with Ecommerce platforms](https://vercel.com/docs/integrations/ecommerce)[Sign in with Vercel Integrate with Vercel for user authentication](https://vercel.com/docs/integrations/sign-in-with-vercel)
+    
+*   Security
+    
+    *   [Compliance Measures Compliance to standards such as SOC2, ISO 27001 & GDPR](https://vercel.com/docs/security)[Shared Responsibility The shared responsibility model splits security tasks between Vercel and the user](https://vercel.com/docs/security/shared-responsibility)[Firewall Protects websites from unauthorized access](https://vercel.com/docs/security/vercel-firewall)[Access Control Deployment protection with password and SSO](https://vercel.com/docs/security/access-control)[SAML SSO Manage team members with third-party identity providers](https://vercel.com/docs/security/saml)[HTTPS/SSL Default serving over HTTPS connections](https://vercel.com/docs/security/encryption)[Directory Sync Manage your teams with third-party identity providers](https://vercel.com/docs/security/directory-sync)[Secure Backend Access Securely access your backend with private connections and OIDC federation](https://vercel.com/docs/security/secure-backend-access)[Deployment Protection Secure your deployments, and manage their access](https://vercel.com/docs/security/deployment-protection)[Deployment Retention Manage your deployments and their lifecycle](https://vercel.com/docs/security/deployment-retention)[Audit Logs Track and analyze your team members activities](https://vercel.com/docs/observability/audit-log)[Protected Git Scopes Limit other Vercel teams from deploying from your Git repositories](https://vercel.com/docs/security/protected-git-scopes)[DDoS Mitigation Protection against DDoS attacks](https://vercel.com/docs/security/ddos-mitigation)
+    
+*   CLI & API
+    
+    *   [Vercel CLI Manage your Projects from the command line](https://vercel.com/docs/cli)[Vercel REST API Use HTTP requests to interact with your account](https://vercel.com/docs/rest-api)[Vercel SDK Use the Typescript SDK to interact with Vercel.](https://vercel.com/docs/rest-api/sdk)[Build Output API File-system-based specification of a Deployment](https://vercel.com/docs/build-output-api/v3)
+    
+*   [All Products](https://vercel.com/docs/all-products)
+    
+
+*   [Vercel CLI](https://vercel.com/docs/cli)
+*   [Vercel REST API](https://vercel.com/docs/rest-api)
+*   [Vercel SDK](https://vercel.com/docs/rest-api/sdk)
+*   [Build Output API](https://vercel.com/docs/build-output-api/v3)
+
+[CLI & API](https://vercel.com/docs/cli-api)
+
+Vercel SDK
+
+How-to
+
+[Vercel SDK](https://vercel.com/docs/rest-api/sdk#vercel-sdk)
+=============================================================
+
+Learn how to use the Vercel SDK to interact with the Vercel REST API.
+
+Table of Contents
+
+The [`@vercel/sdk`](https://www.npmjs.com/package/@vercel/sdk) is a type-safe Typescript SDK that allows you to access the resources and methods of the Vercel REST API.
+
+[Installing Vercel SDK](https://vercel.com/docs/rest-api/sdk#installing-vercel-sdk)
+-----------------------------------------------------------------------------------
+
+To download and install Vercel SDK, run the following command:
+
+pnpm
+
+yarn
+
+npm
+
+```
+pnpm i @vercel/sdk
+```
+
+[Authentication](https://vercel.com/docs/rest-api/sdk#authentication)
+---------------------------------------------------------------------
+
+Vercel Access Tokens are required to authenticate and use the Vercel SDK.
+
+Once you have [created a token](https://vercel.com/docs/rest-api#creating-an-access-token), you can use it to initialize the SDK as follows:
+
+run.ts
+
+```
+import { Vercel } from '@vercel/sdk';
+ 
+const vercel = new Vercel({
+  bearerToken: '<YOUR_BEARER_TOKEN_HERE>',
+});
+```
+
+### [Troubleshooting](https://vercel.com/docs/rest-api/sdk#troubleshooting)
+
+Make sure that you create a token with the correct Vercel [scope](https://vercel.com/docs/dashboard-features#scope-selector). If you face permission (403) errors when you are already sending a token, it can be one of the following problems:
+
+*   The token you are using has expired. Check the expiry date of the token in the Vercel dashboard.
+*   The token does not have access to the correct scope, either not the right team or it does not have account level access.
+*   The resource or operation you are trying to use is not available for that team. For example, AccessGroups is an Enterprise only feature and you are using a token for a team on the pro plan.
+
+[Examples](https://vercel.com/docs/rest-api/sdk#examples)
+---------------------------------------------------------
+
+Learn how to use Vercel SDK through the following categories of examples:
+
+*   [Deployments Automation](https://vercel.com/guides/deployments-automation)
+*   [Project Management](https://vercel.com/guides/project-management)
+*   [Domain Management](https://vercel.com/guides/domain-management)
+*   [Team Management](https://vercel.com/guides/team-management)
+*   [Environment Variables](https://vercel.com/guides/environment-variables)
+*   [Logs and Monitoring](https://vercel.com/guides/logs-monitoring)
+*   [Integrations](https://vercel.com/guides/integrations)
+
+Last updated on November 19, 2024
+
+* * *
+
+[Previous Building Integrations](https://vercel.com/docs/rest-api/vercel-api-integrations)
+
+[Next Build Output API](https://vercel.com/docs/build-output-api/v3)
+
+Was this helpful?
+
+supported.
+
+Send
+
+On this page
+
+*   [Installing Vercel SDK](https://vercel.com/docs/rest-api/sdk#installing-vercel-sdk)
+*   [Authentication](https://vercel.com/docs/rest-api/sdk#authentication)
+*   [Troubleshooting](https://vercel.com/docs/rest-api/sdk#troubleshooting)
+*   [Examples](https://vercel.com/docs/rest-api/sdk#examples)
+
+AskAsk v0
+
+AskAsk v0
+
+Products
+--------
+
+*   [AI](https://vercel.com/ai)
+*   [Enterprise](https://vercel.com/enterprise)
+*   [Next.js](https://vercel.com/solutions/nextjs)
+*   [Observability](https://vercel.com/products/observability)
+*   [Previews](https://vercel.com/products/previews)
+*   [Rendering](https://vercel.com/products/rendering)
+*   [Security](https://vercel.com/security)
+*   [Turbo](https://vercel.com/solutions/turborepo)
+*   [v0](https://v0.dev/)
+
+Resources
+---------
+
+*   [Community](https://vercel.community/)
+*   [Docs](https://vercel.com/docs)
+*   [Experts](https://vercel.com/experts)
+*   [Guides](https://vercel.com/guides)
+*   [Help](https://vercel.com/help)
+*   [Integrations](https://vercel.com/integrations)
+*   [Pricing](https://vercel.com/pricing)
+*   [Resources](https://vercel.com/resources)
+*   [Templates](https://vercel.com/templates)
+
+Company
+-------
+
+*   [About](https://vercel.com/about)
+*   [Blog](https://vercel.com/blog)
+*   [Careers](https://vercel.com/careers)
+*   [Changelog](https://vercel.com/changelog)
+*   [Contact Us](https://vercel.com/contact)
+*   [Customers](https://vercel.com/customers)
+*   [Partners](https://vercel.com/partners)
+*   [Privacy Policy](https://vercel.com/legal/privacy-policy)
+*   Legal
+
+Social
+------
+
+*   [GitHub](https://github.com/vercel)
+*   [LinkedIn](https://linkedin.com/company/vercel)
+*   [Twitter](https://x.com/vercel)
+*   [YouTube](https://youtube.com/@VercelHQ)
+
+[](https://vercel.com/home)
+
+[Loading status…](https://vercel-status.com/)
+
+Select a display theme:system lightdark
+
+Vercel SDKAskAsk v0
